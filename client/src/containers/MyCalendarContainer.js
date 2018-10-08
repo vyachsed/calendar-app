@@ -7,9 +7,9 @@ class MyCalendarContainer extends Component {
   render() {
     const {
       calendar,
-      setViewAction,
-      setDateAction,
-      getEventsAction,
+      setView,
+      setDate,
+      getEvents,
     } = this.props
     return (
       <MyCalendar
@@ -19,9 +19,9 @@ class MyCalendarContainer extends Component {
         isFetching={calendar.isFetching}
         customCSSclasses={calendar.customCSSclasses}
         isAuth={calendar.isAuth}
-        setView={setViewAction}
-        setDate={setDateAction}
-        getEvents={getEventsAction}
+        setView={setView}
+        setDate={setDate}
+        getEvents={getEvents}
       />
     )
   }
@@ -34,9 +34,9 @@ const mapStateToProps = store => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  setViewAction: view => dispatch(setView(view)),
-  setDateAction: date => dispatch(setDate(date)),
-  getEventsAction: () => dispatch(getEvents()),
+  setView: view => dispatch(setView(view)),
+  setDate: date => dispatch(setDate(date)),
+  getEvents: () => dispatch(getEvents()),
 })
 
 export default connect(
