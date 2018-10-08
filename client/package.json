@@ -1,0 +1,43 @@
+{
+  "name": "calendar-app-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-big-calendar": "^0.20.1",
+    "react-calendar": "^2.17.4",
+    "react-dom": "^16.5.2",
+    "react-modal": "^3.6.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.5",
+    "react-yearly-calendar": "^1.2.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged",
+    "eslint": "node_modules/.bin/eslint src/"
+  },
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "redux-logger": "^3.0.6"
+  },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
