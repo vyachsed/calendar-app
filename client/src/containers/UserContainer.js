@@ -7,9 +7,9 @@ import { getAuth, getEvents } from '../actions/MyCalendarActions'
 class UserContainer extends Component {
   handleLogin = user => {
     const { handleLogin, getAuth, getEvents } = this.props
-    const successCallback = () => {
-      getAuth()
-      getEvents()
+    const successCallback = async () => {
+      await getAuth()
+      await getEvents()
     }
     handleLogin(successCallback, user)
   }
