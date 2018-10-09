@@ -7,7 +7,7 @@ import Modal from "react-modal"
 import { getCustomClasses } from "../../util/date"
 import "./styles.css"
 
-import "./react-big-calendar.css"
+//import "./react-big-calendar.css"
 
 Modal.setAppElement("#root")
 
